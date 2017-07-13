@@ -9,8 +9,9 @@ async function changeColors() {
   }
   // Iterate through cards and change background color
   [].forEach.call(document.getElementsByClassName('ghx-issue'), (el, idx) => {
+    let id = el.getAttribute('data-issue-id');
+    let grabber = document.querySelector(`[data-issue-id="${id}"] .ghx-grabber`) || {style: {}};
     // Only change color when color is set.
-    let grabber = el.children[2] || {style: {}};
     let bg = grabber.style['background-color'] || '';
     if (bg.replace(/ /g,'') !== '') {
       let rgb = tinycolor(bg).lighten(30).toRgbString();
