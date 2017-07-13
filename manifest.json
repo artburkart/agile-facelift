@@ -1,6 +1,6 @@
 {
   "name": "Agile Facelift",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Attempts to highlight tickets based on their card color in a certain proprietary issue tracking software.",
   "manifest_version": 2,
   "permissions": ["tabs", "https://*.atlassian.net/secure/RapidBoard.jspa*"],
