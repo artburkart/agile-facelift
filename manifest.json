@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "permissions": ["tabs", "https://*.atlassian.net/secure/RapidBoard.jspa*"],
+  "content_scripts": [
+    {
+      "run_at": "document_idle",
+      "matches": ["https://*.atlassian.net/secure/RapidBoard.jspa*"],
+      "js": ["tinycolor.js", "agile.js"]
+    }
+  ],
+  "name": "Agile Facelift",
+  "version": "1.0",
+  "description": "Augments the agile UI.",
+  "background": {
+    "persistent": false,
+    "scripts": ["agile.js"]
+  },
+  "permissions": ["http://*.google.com/", "https://*.google.com/"]
+}
