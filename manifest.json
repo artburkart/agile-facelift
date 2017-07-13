@@ -1,6 +1,12 @@
 {
+  "name": "Agile Facelift",
+  "version": "1.0.1",
+  "description": "Attempts to highlight tickets based on their card color in a certain proprietary issue tracking software.",
   "manifest_version": 2,
   "permissions": ["tabs", "https://*.atlassian.net/secure/RapidBoard.jspa*"],
+  "icons": {
+    "128": "icon128.png"
+  },
   "content_scripts": [
     {
       "run_at": "document_idle",
@@ -8,12 +14,9 @@
       "js": ["tinycolor.js", "agile.js"]
     }
   ],
-  "name": "Agile Facelift",
-  "version": "1.0",
-  "description": "Attempts to highlight tickets based on their card color in a certain proprietary issue tracking software.",
   "background": {
     "persistent": false,
     "scripts": ["agile.js"]
   },
-  "permissions": ["http://*.google.com/", "https://*.google.com/"]
+  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
 }
