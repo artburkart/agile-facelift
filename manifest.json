@@ -1,7 +1,8 @@
 {
   "name": "Agile Facelift",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Attempts to highlight tickets based on their card color in a certain proprietary issue tracking software.",
+  "homepage_url": "https://github.com/artburkart/agile-facelift",
   "manifest_version": 2,
   "permissions": ["tabs", "https://*.atlassian.net/secure/RapidBoard.jspa*"],
   "icons": {
@@ -17,6 +18,5 @@
   "background": {
     "persistent": false,
     "scripts": ["agile.js"]
-  },
-  "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+  }
 }
