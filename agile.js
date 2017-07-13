@@ -14,7 +14,7 @@ async function changeColors() {
     // Only change color when color is set.
     let bg = grabber.style['background-color'] || '';
     if (bg.replace(/ /g,'') !== '') {
-      let rgb = tinycolor(bg).lighten(30).toRgbString();
+      let rgb = tinycolor(bg).lighten(40).toRgbString();
       el.style.backgroundColor = rgb;
     }
   });

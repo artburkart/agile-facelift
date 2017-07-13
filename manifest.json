@@ -1,6 +1,6 @@
 {
   "name": "Agile Facelift",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Attempts to highlight tickets based on their card color in a certain proprietary issue tracking software.",
   "homepage_url": "https://github.com/artburkart/agile-facelift",
   "manifest_version": 2,
